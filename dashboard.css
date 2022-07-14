@@ -1,0 +1,45 @@
+	h1 {
+        margin-top: 40px;
+		color: rgba(48, 190, 77, 0.693);
+		font-size: 45px;
+	}
+
+	#b1, #b2, #b3, #b4, #b5,#b6, #b7, #b8, #b9 {
+		width: 80px;
+		height: 52px;
+		margin: auto;
+		border: 1px solid gray;
+		border-radius: 6px;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#print {
+		color: rgba(48, 190, 77, 0.693);
+		font-size: 20px;
+	}
+
+	#main {
+		text-align: center;
+	}
+
+	#ins {
+		
+		color: rgba(48, 190, 77, 0.693);
+		font-size: 17px;
+	}
+
+    h1::after
+    {
+        content: '';
+        background: rgb(66, 165, 12);
+        width: 0%;
+        height: 2px;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    h1:hover::after
+    {
+        width: 100%;
+    }
