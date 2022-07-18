@@ -1,4 +1,5 @@
 flag = 1;
+
 function check() {
 
 	var k1, k2, k3, k4, k5, k6, k7, k8, k9;
@@ -339,5 +340,5 @@ function reset() {
 	document.getElementById("k7").value = '';
 	document.getElementById("k8").value = '';
 	document.getElementById("k9").value = '';
-
 }
+

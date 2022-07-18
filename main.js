@@ -23,23 +23,26 @@ function saveData(){
 
  }
 
-function login()
-    {
-    let email,psw;
+ function login()
+ {
+    
+    let email,pass;
     email=document.getElementById("email").value;
-    psw=document.getElementById("psw").value;
-    let user=new Array();
-    user =JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):[] 
-    if(user.some((v)=>{return v.email==email && v.psw==psw}))
+ 
+    pass=document.getElementById("pass").value;
+ 
+    let user_records=new Array();
+    user_records=JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):[]
+    if(user_records.some((v)=>{return v.email==email && v.pass==pass}))
     {
-        alert("Login Pass");
-        let current_user=user.filter((v)=>{return v.email==email && v.psw==psw})[0]
-        localStorage.setItem('name',current_user.name);
-        localStorage.setItem('email',current_user.email);
-        window.location.href="dashboard.html"
+        let current_user=user_records.filter((v)=>{return v.email==email && v.pass==pass})[0]
+
+        localStorage.setItem('current_user',current_user.name);
+        alert('Login success as ' + current_user.email +" Email Id");  
+        event.preventDefault();
     }
     else
     {
-        alert('Login Fail');
+        alert('Login Fail - Wrong email or password');
     }
-}
+ }
