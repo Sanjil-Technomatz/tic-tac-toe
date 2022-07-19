@@ -17,12 +17,17 @@
 <body style="background-color: black;">
     
 
-        <p id="p1"></p>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <span class="navbar-text" >Player 1 who plays as X : <b><span id="p1" style="color: white; font-size: x-large;"></span></b></span>
+          <span class="navbar-text" >Player 2 who plays as 0 : <b><span id="p2" style="color: white; font-size: x-large;"></span></b></span>
+        </div>
+      </nav>
+
 
         <div id="main">
             <h1> TIC TAC TOE</h1>
     
-            <p id="ins">Just Tap on any box and game start's<br><br>First Player starts as <b>Player X</b><br>And<br>Second Player as <b>Player 0</b></p>
      
             <br><br>
             <input type="text" id="k1" onclick="tictactoe_1(); check();" readonly>
