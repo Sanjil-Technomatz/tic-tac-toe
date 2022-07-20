@@ -1,5 +1,5 @@
 function saveData(){
-    let name,mob,email,pass;
+    let name,email,pass;
 
     name = document.getElementById("name").value;
     email = document.getElementById("email").value;
@@ -8,9 +8,7 @@ function saveData(){
     user =JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):[] 
     if(user.some((v)=>{return v.email==email}))
     {
-        
         alert("duplicate data");
-    
     }
     else{
     user.push({
@@ -47,6 +45,7 @@ function saveData(){
         alert('Login Fail - Wrong email or password');
     }
  }
+ 
  function login2()
  {
     

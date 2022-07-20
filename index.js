@@ -218,119 +218,16 @@ function check() {
 }
 
 
-function tictactoe_1() {
-	if (flag == 1) {
-		document.getElementById("k1").value = "X";
-		document.getElementById("k1").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k1").value = "0";
-		document.getElementById("k1").disabled = true;
-		flag = 1;
-	}
-}
+function tictactoe(id) {
 
-function tictactoe_2() {
 	if (flag == 1) {
-		document.getElementById("k2").value = "X";
-		document.getElementById("k2").disabled = true;
+		document.getElementById(id).value = "X";
+		document.getElementById(id).disabled = true;
 		flag = 0;
 	}
 	else {
-		document.getElementById("k2").value = "0";
-		document.getElementById("k2").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_3() {
-	if (flag == 1) {
-		document.getElementById("k3").value = "X";
-		document.getElementById("k3").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k3").value = "0";
-		document.getElementById("k3").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_4() {
-	if (flag == 1) {
-		document.getElementById("k4").value = "X";
-		document.getElementById("k4").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k4").value = "0";
-		document.getElementById("k4").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_5() {
-	if (flag == 1) {
-		document.getElementById("k5").value = "X";
-		document.getElementById("k5").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k5").value = "0";
-		document.getElementById("k5").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_6() {
-	if (flag == 1) {
-		document.getElementById("k6").value = "X";
-		document.getElementById("k6").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k6").value = "0";
-		document.getElementById("k6").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_7() {
-	if (flag == 1) {
-		document.getElementById("k7").value = "X";
-		document.getElementById("k7").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k7").value = "0";
-		document.getElementById("k7").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_8() {
-	if (flag == 1) {
-		document.getElementById("k8").value = "X";
-		document.getElementById("k8").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k8").value = "0";
-		document.getElementById("k8").disabled = true;
-		flag = 1;
-	}
-}
-
-function tictactoe_9() {
-	if (flag == 1) {
-		document.getElementById("k9").value = "X";
-		document.getElementById("k9").disabled = true;
-		flag = 0;
-	}
-	else {
-		document.getElementById("k9").value = "0";
-		document.getElementById("k9").disabled = true;
+		document.getElementById(id).value = "0";
+		document.getElementById(id).disabled = true;
 		flag = 1;
 	}
 }
